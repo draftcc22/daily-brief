@@ -1,63 +1,56 @@
 {
   "briefs": [
     {
-      "briefs": [
+      "id": "2026-03-16",
+      "date": "16 Mar",
+      "date_short": "16 Mar",
+      "date_full": "Monday, 16 March 2026",
+      "headline": "UAE Tour stage 4: Dutch rider Tiesj Benoot wins as Tadej Pogacar takes overall lead",
+      "lede": "Tiesj Benoot of Israel-Premier Tech stormed to victory on stage 4 of the UAE Tour, while Slovenian rider Tadej Pogacar took over the overall lead.",
+      "stories": [
         {
-          "id": "2026-03-16",
-          "date": "16 Mar",
-          "date_short": "16 Mar",
-          "date_full": "Monday, 16 March 2026",
-          "headline": "Markets Steady as Central Banks Signal Patience on Rate Cuts",
-          "lede": "A quieter week ahead for global markets as policymakers opt for caution, while tensions in the South China Sea draw fresh diplomatic attention.",
-          "quote": {
-            "text": "We will not be rushed into decisions that the data does not yet support.",
-            "source": "ECB President, Frankfurt briefing"
-          },
-          "stats": [
-            {
-              "value": "5.1%",
-              "label": "US 10Y Yield"
-            },
-            {
-              "value": "£1.27",
-              "label": "GBP / USD"
-            },
-            {
-              "value": "↓0.3%",
-              "label": "FTSE 100"
-            },
-            {
-              "value": "12°C",
-              "label": "London Today"
-            }
-          ],
-          "stories": [
-            {
-              "tag": "Economy",
-              "title": "Federal Reserve Holds Rates, Eyes Summer Window",
-              "body": "The Fed left its benchmark rate unchanged at 5.25–5.50%, with Chair Powell indicating the committee wants two to three more months of inflation data before considering cuts. Markets now price a 60% chance of a June reduction."
-            },
-            {
-              "tag": "Geopolitics",
-              "title": "South China Sea Tensions Rise After Naval Patrol Incident",
-              "body": "A US carrier group conducted freedom-of-navigation exercises near the Spratly Islands, drawing a sharp protest from Beijing. ASEAN foreign ministers called for de-escalation as shipping insurers raised premiums on routes through the strait."
-            },
-            {
-              "tag": "Technology",
-              "title": "Apple Announces WWDC Date, AI Features Tipped",
-              "body": "Apple confirmed its annual developer conference for early June. Leaks suggest a major Siri overhaul powered by on-device models, and tighter integration with third-party AI tools — a direct response to pressure from Google and Microsoft."
-            },
-            {
-              "tag": "UK",
-              "title": "UK Budget Revision Pencils in £8bn Extra for NHS",
-              "body": "The Chancellor unveiled a mid-year spending update targeting NHS waiting lists, funded partly by a windfall levy on North Sea operators. Opposition critics called the measure 'too little, too late' ahead of a likely autumn election."
-            }
-          ]
+          "tag": "Race Results",
+          "title": "UAE Tour Stage 4: Benoot Claims Victory as Pogacar Takes Overall Lead",
+          "body": "The 207km stage from Al Ain to Jebel Hafeet was a grueling test for riders. Israel-Premier Tech's Tiesj Benoot attacked on the final climb to take his first win of the season. Pogacar's teammate Brandon McNulty placed second."
+        },
+        {
+          "tag": "Pro Peloton",
+          "title": "Wout van Aert to Skip Volta ao Algarve",
+          "body": "The Belgian rider will skip the Portuguese event due to fatigue after a busy start to the season, affecting his preparation for Milano-Sanremo."
+        },
+        {
+          "tag": "Tech & Gear",
+          "title": "Specialized Launches New S-Works Venge SBC",
+          "body": "The American manufacturer released its latest aero road bike featuring an advanced cockpit optimised for airflow, already used by Sagan and Evenepoel."
+        },
+        {
+          "tag": "Community",
+          "title": "Strava Launches Virtual Club Challenge Series",
+          "body": "Strava announced a new series of virtual club challenges including hill climbs, time trials and group rides with prizes for winning clubs."
         }
       ],
-      "id": "2026-03-16",
-      "date_full": "Monday, 16 March 2026",
-      "date_short": "16 Mar"
+      "stats": [
+        {
+          "label": "Stage Winner",
+          "value": "Tiesj Benoot (4h 52m 41s)"
+        },
+        {
+          "label": "Race Leader",
+          "value": "Tadej Pogacar"
+        },
+        {
+          "label": "Next Race",
+          "value": "UAE Tour Stage 5 — 17 Mar"
+        },
+        {
+          "label": "Today",
+          "value": "16 March 2026"
+        }
+      ],
+      "quote": {
+        "text": "The final climb was brutal, but I knew I had a chance to win.",
+        "source": "Tiesj Benoot, Israel-Premier Tech"
+      }
     }
   ]
 }
