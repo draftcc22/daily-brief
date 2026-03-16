@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1612;
+      --paper: #f5f0e8;
+      --paper-dark: #ede8dc;
+      --accent: #c0392b;
+      --muted: #7a7060;
+      --rule: #c8bfaa;
+      --col-gap: 2rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ─── MASTHEAD ─── */
+    .masthead {
+      border-bottom: 3px double var(--ink);
+      padding: 1.5rem 2rem 1rem;
+      text-align: center;
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .masthead-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1;
+    }
+
+    .site-title span {
+      color: var(--accent);
+    }
+
+    .masthead-rule {
+      height: 1px;
+      background: var(--ink);
+      margin: 0.6rem 0 0.5rem;
+    }
+
+    .issue-line {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ─── LAYOUT ─── */
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    /* ─── BRIEF SELECTOR ─── */
+    .nav-strip {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--rule);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-strip::-webkit-scrollbar { display: none; }
+
+    .nav-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      margin-right: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .date-pill {
+      flex-shrink: 0;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      background: transparent;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      transition: all 0.15s;
+    }
+    .date-pill:hover { border-color: var(--ink); color: var(--ink); }
+    .date-pill.active {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+
+    /* ─── BRIEF CONTENT ─── */
+    .brief { display: none; padding-top: 2rem; }
+    .brief.active { display: block; }
+
+    /* Headline section */
+    .brief-header {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 2rem;
+    }
+
+    .brief-date-full {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .brief-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 38ch;
+    }
+
+    .brief-lede {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-top: 0.8rem;
+      max-width: 60ch;
+      line-height: 1.6;
+    }
+
+    /* Two-column editorial grid */
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 var(--col-gap);
+    }
+
+    @media (max-width: 640px) {
+      .columns { grid-template-columns: 1fr; }
+    }
+
+    .col-divider {
+      grid-column: 1 / -1;
+      height: 1px;
+      background: var(--rule);
+      margin: 1.8rem 0;
+    }
+
+    /* Section label */
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-top: 2px solid var(--ink);
+      padding-top: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Story cards */
+    .story {
+      margin-bottom: 1.8rem;
+    }
+
+    .story h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.35rem;
+    }
+
+    .story p {
+      font-size: 0.875rem;
+      line-height: 1.65;
+      color: #3a342c;
+    }
+
+    .story-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    /* Full-width feature story */
+    .feature {
+      background: var(--paper-dark);
+      border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.8rem;
+      grid-column: 1 / -1;
+    }
+
+    .feature .section-label { border-top-color: var(--accent); color: var(--accent); }
+
+    .feature h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--rule);
+      margin-bottom: 1.8rem;
+      overflow: hidden;
+    }
+
+    .stat {
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      border-right: 1px solid var(--rule);
+    }
+    .stat:last-child { border-right: none; }
+
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block;
+    }
+
+    .stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Quote pull */
+    .pull-quote {
+      border-top: 3px double var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: 1rem 0;
+      margin: 1.5rem 0;
+      grid-column: 1 / -1;
+    }
+
+    .pull-quote blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .pull-quote cite {
+      display: block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.5rem;
+      font-style: normal;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 3px double var(--ink);
+      padding: 1.5rem 0 0;
+      text-align: center;
+      margin-top: 3rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    footer .lobster { color: var(--accent); }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+    }
+    .empty-state p { font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; margin-top: 0.5rem; }
+
+    /* Print rule utility */
+    hr.rule { border: none; border-top: 1px solid var(--rule); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span id="masthead-left">Powered by Mistral · OpenClaw</span>
+    <span id="current-date-header"></span>
+    <span>M1 Mac Mini · Hounslow</span>
+  </div>
+  <div class="masthead-rule"></div>
+  <h1 class="site-title">The Daily<span> Brief</span></h1>
+  <div class="masthead-rule"></div>
+  <div class="issue-line" id="issue-line">Your Morning Intelligence — Published at 09:00</div>
+</header>
+
+<main class="page">
+
+  <nav class="nav-strip">
+    <span class="nav-label">Archive →</span>
+    <div id="date-nav"></div>
+  </nav>
+
+  <div id="briefs-container">
+    <!-- Briefs injected here by JS from briefs.json -->
+  </div>
+
+</main>
+
+<footer class="page">
+  Generated by <span class="lobster">OpenClaw 🦞</span> + Mistral · Auto-published to GitHub Pages · &copy; <span id="footer-year"></span>
+</footer>
+
+<script>
+  // ─── Date header ───
+  const now = new Date();
+  document.getElementById('current-date-header').textContent =
+    now.toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById('footer-year').textContent = now.getFullYear();
+
+  // ─── Load briefs.json ───
+  fetch('briefs.json')
+    .then(r => r.json())
+    .then(data => {
+      const briefs = data.briefs || [];
+      const nav = document.getElementById('date-nav');
+      const container = document.getElementById('briefs-container');
+
+      if (briefs.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem">No briefs yet.</h2>
+            <p>The first one arrives tomorrow at 09:00.</p>
+          </div>`;
+        return;
+      }
+
+      // Update issue line
+      document.getElementById('issue-line').textContent =
+        `Issue #${briefs.length} · ${briefs[0].date_full || '—'}`;
+
+      briefs.forEach((brief, i) => {
+        // Nav pill
+        const pill = document.createElement('button');
+        pill.className = 'date-pill' + (i === 0 ? ' active' : '');
+        pill.textContent = brief.date_short || brief.date;
+        pill.dataset.id = brief.id;
+        pill.onclick = () => {
+          document.querySelectorAll('.date-pill').forEach(p => p.classList.remove('active'));
+          document.querySelectorAll('.brief').forEach(b => b.classList.remove('active'));
+          pill.classList.add('active');
+          document.getElementById('brief-' + brief.id).classList.add('active');
+        };
+        nav.appendChild(pill);
+
+        // Brief section
+        const section = document.createElement('section');
+        section.className = 'brief' + (i === 0 ? ' active' : '');
+        section.id = 'brief-' + brief.id;
+        section.innerHTML = renderBrief(brief);
+        container.appendChild(section);
+      });
+    })
+    .catch(() => {
+      document.getElementById('briefs-container').innerHTML = `
+        <div class="empty-state">
+          <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem">Setting up…</h2>
+          <p>briefs.json not found. The publish script will create it.</p>
+        </div>`;
+    });
+
+  function renderBrief(b) {
+    // Feature story (first story rendered prominently)
+    const [feature, ...stories] = b.stories || [];
+
+    const featureHtml = feature ? `
+      <div class="feature">
+        <div class="section-label">⬛ Lead Story</div>
+        <h3>${feature.title}</h3>
+        <p>${feature.body}</p>
+      </div>` : '';
+
+    // Stats bar
+    const statsHtml = b.stats && b.stats.length ? `
+      <div class="stats-bar">
+        ${b.stats.map(s => `
+          <div class="stat">
+            <span class="stat-value">${s.value}</span>
+            <span class="stat-label">${s.label}</span>
+          </div>`).join('')}
+      </div>` : '';
+
+    // Remaining stories split into two columns
+    const storyCards = stories.map(s => `
+      <div class="story">
+        <span class="story-tag">${s.tag || 'News'}</span>
+        <h3>${s.title}</h3>
+        <p>${s.body}</p>
+      </div>`).join('');
+
+    // Pull quote
+    const quoteHtml = b.quote ? `
+      <div class="pull-quote">
+        <blockquote>"${b.quote.text}"</blockquote>
+        <cite>— ${b.quote.source}</cite>
+      </div>` : '';
+
+    return `
+      <div class="brief-header">
+        <div class="brief-date-full">${b.date_full || b.date}</div>
+        <h2 class="brief-headline">${b.headline}</h2>
+        <p class="brief-lede">${b.lede}</p>
+      </div>
+
+      <div class="columns">
+        ${featureHtml}
+        ${statsHtml}
+        ${quoteHtml}
+        <div class="col-divider" style="display:${stories.length ? 'block' : 'none'}"></div>
+        ${storyCards ? `
+          <div>
+            <div class="section-label">— Analysis</div>
+            ${stories.filter((_, i) => i % 2 === 0).map(s => `
+              <div class="story">
+                <span class="story-tag">${s.tag || 'News'}</span>
+                <h3>${s.title}</h3>
+                <p>${s.body}</p>
+              </div>`).join('')}
+          </div>
+          <div>
+            <div class="section-label">— World</div>
+            ${stories.filter((_, i) => i % 2 !== 0).map(s => `
+              <div class="story">
+                <span class="story-tag">${s.tag || 'News'}</span>
+                <h3>${s.title}</h3>
+                <p>${s.body}</p>
+              </div>`).join('')}
+          </div>` : ''}
+      </div>`;
+  }
+</script>
+
+</body>
+</html>
