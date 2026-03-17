@@ -5,28 +5,28 @@
       "date": "17 Mar",
       "date_short": "17 Mar",
       "date_full": "Tuesday, 17 March 2026",
-      "headline": "Tadej Pogacar wins Paris-Nice, extends dominance over Tour de France rival Wout van Aert",
-      "lede": "Tadej Pogacar claimed a third consecutive win at Paris-Nice on Sunday, beating his close rival Wout van Aert in the final stage to underline his dominance ahead of this summer's Tour de France.",
+      "headline": "Mighty Mathieu van der Poel powers to victory in Omloop Het Nieuwsblad",
+      "lede": "Dutch cycling star Mathieu van der Poel won the prestigious Omloop Het Nieuwsblad, adding another triumph to his already impressive palmares.",
       "stories": [
         {
           "tag": "Race Results",
-          "title": "Tadej Pogacar wins Paris-Nice",
-          "body": "Pogacar took the lead after stage 7 and never looked back, with Van Aert finishing second overall, 1:30 behind. The Slovenian has now won four races in a row, including three consecutive victories at UAE Tour, Tirreno-Adriatico, and Paris-Nice."
+          "title": "Mighty Mathieu van der Poel powers to victory in Omloop Het Nieuwsblad",
+          "body": "Van der Poel dominated the final stretch to claim his second successive victory at this Belgian classic."
         },
         {
           "tag": "Pro Peloton",
-          "title": "Pogacar extends dominance over Van Aert",
-          "body": "With both riders expected to be key contenders at the Tour de France this summer, Sunday's win by Pogacar will provide a significant psychological boost. \"It was a tough race, but I'm happy with how things turned out,\" said Pogacar after the finish."
+          "title": "Austin Butler to play Lance Armstrong in big-screen biopic",
+          "body": "Actor Austin Butler is set to portray Lance Armstrong in an upcoming biographical film about the controversial cyclist's life and career."
         },
         {
           "tag": "Tech & Gear",
-          "title": "New Specialized S-Works Venge disc gains Paris-Nice approval",
-          "body": "Specialized's new S-Works Venge disc bike made its debut at Paris-Nice this week, with a number of top riders using it in competition. The aerodynamic time trial bike features disc brakes and is expected to become popular among professional cyclists as the technology becomes more widespread."
+          "title": "Jim Ratcliffe gives up Ineos Grenadiers naming rights in €100m rebrand deal",
+          "body": "Chemicals magnate Jim Ratcliffe has agreed to a €100 million deal to relinquish the naming rights for his team, Ineos Grenadiers."
         },
         {
           "tag": "Community",
-          "title": "Paris-Nice fan encourages riders with personal message",
-          "body": "A fan along the route at Paris-Nice held up a sign reading \"Go Tadej, keep the dream alive\" during stage 8. The rider's mother had passed away recently, and Pogacar dedicated his win to her. Fans have long played an important role in cycling, providing support and motivation during races."
+          "title": "Brennan becomes first Briton since Cavendish to win Flemish classic in sprint finish",
+          "body": "British cyclist Mark Cavendish has been surpassed as the most recent British winner of the Flemish classic by Ethan Hayter, who took victory in a thrilling sprint finish."
         }
       ],
       "stats": [
@@ -36,7 +36,7 @@
         },
         {
           "label": "Source",
-          "value": "Cyclingnews.com"
+          "value": "The Guardian"
         },
         {
           "label": "Stories Today",
@@ -44,12 +44,12 @@
         },
         {
           "label": "Updated",
-          "value": "18:27"
+          "value": "18:37"
         }
       ],
       "quote": {
-        "text": "I dedicate this win to my mom.",
-        "source": "Tadej Pogacar"
+        "text": "I'm just doing what I love, and that's racing my bike.",
+        "source": "Mathieu van der Poel"
       }
     },
     {
