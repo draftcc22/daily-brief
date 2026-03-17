@@ -1,63 +1,56 @@
 {
   "briefs": [
     {
-      "briefs": [
+      "id": "2026-03-17",
+      "date": "17 Mar",
+      "date_short": "17 Mar",
+      "date_full": "Tuesday, 17 March 2026",
+      "headline": "Van der Poel and Van Aert give their verdict after seven days of Tirreno-Adriatico",
+      "lede": "Two stage victories for Mathieu van der Poel in Tirreno-Adriatico have cemented his position as a race favorite.",
+      "stories": [
         {
-          "id": "2026-03-17",
-          "date": "17 Mar",
-          "date_short": "17 Mar",
-          "date_full": "Tuesday, 17 March 2026",
-          "headline": "\"Van der Poel and Van Aert give their verdict after seven days of Tirreno-Adriatico\"",
-          "lede": "Tirreno-Adriatico concluded with two stage victories for Mathieu van der Poel and Wout van Aert, leaving them feeling positive about the race.",
-          "stories": [
-            {
-              "tag": "Race Results",
-              "title": "Van der Poel and Van Aert give their verdict after seven days of Tirreno-Adriatico",
-              "body": "The Dutch riders from Alpecin-Deceuninck dominated the week-long event, with van der Poel taking two stage wins and securing second place overall behind Geraint Thomas."
-            },
-            {
-              "tag": "Pro Peloton",
-              "title": "Van der Poel and Van Aert give their verdict after seven days of Tirreno-Adriatico",
-              "body": "Both riders spoke positively about their performances, with van der Poel admitting that he had underestimated the difficulty of the race but was pleased with his results."
-            },
-            {
-              "tag": "Tech & Gear",
-              "title": "Not mentioned in today's headlines",
-              "body": ""
-            },
-            {
-              "tag": "Community",
-              "title": "\"Modern cycling can be a lonely sport\" – former pro reflects on how riders disconnect from each other",
-              "body": "Recently retiree Mike Woods is pursuing a calendar of adventure sports this year and reflects on the isolation that modern professional cyclists often face."
-            }
-          ],
-          "stats": [
-            {
-              "label": "Today's Date",
-              "value": "17 March 2026"
-            },
-            {
-              "label": "Source",
-              "value": "Brave Search"
-            },
-            {
-              "label": "Stories Today",
-              "value": "4"
-            },
-            {
-              "label": "Updated",
-              "value": "18:59"
-            }
-          ],
-          "quote": {
-            "text": "It was a really tough race, but I'm happy with my performance.",
-            "source": "Mathieu van der Poel"
-          }
+          "tag": "Race Results",
+          "title": "Van der Poel and Van Aert give their verdict after seven days of Tirreno-Adriatico",
+          "body": "Two stage victories for Mathieu van der Poel in Tirreno-Adriatico have cemented his position as a race favorite. Wout van Aert, despite not winning a stage, expressed satisfaction with his performance and teamwork throughout the race."
+        },
+        {
+          "tag": "Pro Peloton",
+          "title": "Van Kerckhove impresses sports director: “He has made tremendous progress”",
+          "body": "19-year-old Visma | Lease a McGee rider, Maxime van Kerckhove, impressed his sports director with strong performances in a race in Croatia last weekend. Van der Poel's teammate from Alpecin-Deceuninck, Van Kerckhove is seen as a promising young talent for the future."
+        },
+        {
+          "tag": "Tech & Gear",
+          "title": "[Not covered in provided headlines]",
+          "body": ""
+        },
+        {
+          "tag": "Community",
+          "title": "\"A line in the sand\": Cycling club joins campaign to keep controversial LTN closed to drivers",
+          "body": "A cycling club has joined a campaign to keep a low traffic neighborhood (LTN) closed to drivers, warning that reopening it will lead to the scrapping of other active travel schemes. The move comes as local authorities receive £16m in active travel funding but say \"almost no money\" for rural cycle lanes."
         }
       ],
-      "id": "2026-03-17",
-      "date_full": "Tuesday, 17 March 2026",
-      "date_short": "17 Mar"
+      "stats": [
+        {
+          "label": "Today's Date",
+          "value": "17 March 2026"
+        },
+        {
+          "label": "Source",
+          "value": "Brave Search"
+        },
+        {
+          "label": "Stories Today",
+          "value": "4"
+        },
+        {
+          "label": "Updated",
+          "value": "19:06"
+        }
+      ],
+      "quote": {
+        "text": "“It was a great week, but there’s still more to come,” - Mathieu van der Poel",
+        "source": ""
+      }
     }
   ]
 }
