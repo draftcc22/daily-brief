@@ -1,63 +1,56 @@
 {
   "briefs": [
     {
-      "briefs": [
+      "id": "2026-03-17",
+      "date": "17 Mar",
+      "date_short": "17 Mar",
+      "date_full": "Tuesday, 17 March 2026",
+      "headline": "Tour de France Ends with Epic Sprint Finish as Sam Bennett Takes Final Stage Win",
+      "lede": "Irish sprinter Sam Bennett clinched a record-breaking stage win on the Champs-Élysées, wrapping up the 2021 Tour de France.",
+      "stories": [
         {
-          "id": "2026-03-16",
-          "date": "16 Mar",
-          "date_short": "16 Mar",
-          "date_full": "Monday, 16 March 2026",
-          "headline": "UAE Tour stage 4: Dutch rider Tiesj Benoot wins as Tadej Pogacar takes overall lead",
-          "lede": "Tiesj Benoot of Israel-Premier Tech stormed to victory on stage 4 of the UAE Tour, while Slovenian rider Tadej Pogacar took over the overall lead.",
-          "stories": [
-            {
-              "tag": "Race Results",
-              "title": "UAE Tour Stage 4: Benoot Claims Victory as Pogacar Takes Overall Lead",
-              "body": "The 207km stage from Al Ain to Jebel Hafeet was a grueling test for riders. Israel-Premier Tech's Tiesj Benoot attacked on the final climb to take his first win of the season. Pogacar's teammate Brandon McNulty placed second."
-            },
-            {
-              "tag": "Pro Peloton",
-              "title": "Wout van Aert to Skip Volta ao Algarve",
-              "body": "The Belgian rider will skip the Portuguese event due to fatigue after a busy start to the season, affecting his preparation for Milano-Sanremo."
-            },
-            {
-              "tag": "Tech & Gear",
-              "title": "Specialized Launches New S-Works Venge SBC",
-              "body": "The American manufacturer released its latest aero road bike featuring an advanced cockpit optimised for airflow, already used by Sagan and Evenepoel."
-            },
-            {
-              "tag": "Community",
-              "title": "Strava Launches Virtual Club Challenge Series",
-              "body": "Strava announced a new series of virtual club challenges including hill climbs, time trials and group rides with prizes for winning clubs."
-            }
-          ],
-          "stats": [
-            {
-              "label": "Stage Winner",
-              "value": "Tiesj Benoot (4h 52m 41s)"
-            },
-            {
-              "label": "Race Leader",
-              "value": "Tadej Pogacar"
-            },
-            {
-              "label": "Next Race",
-              "value": "UAE Tour Stage 5 — 17 Mar"
-            },
-            {
-              "label": "Today",
-              "value": "16 March 2026"
-            }
-          ],
-          "quote": {
-            "text": "The final climb was brutal, but I knew I had a chance to win.",
-            "source": "Tiesj Benoot, Israel-Premier Tech"
-          }
+          "tag": "Race Results",
+          "title": "Tour de France 2021 Wraps Up with Emotional Final Stage",
+          "body": "[The three-week Grand Tour concluded in Paris with Bennett's victory on the final stage. Tadej Pogačar of UAE Team Emirates retained his overall lead to win his second consecutive yellow jersey.]"
+        },
+        {
+          "tag": "Pro Peloton",
+          "title": "Benoot Wins Time Trial at European Championships",
+          "body": "[Belgium's Wout van Aert took silver and defending champion Viktor Campenaerts of Belgium finished fourth, as Jasper Stuyven of Trek-Segafredo claimed the gold in the men's road race time trial at the European Championships.]"
+        },
+        {
+          "tag": "Tech & Gear",
+          "title": "Specialized S-Works Venge Now Available with Dura-Ace Di2 Integration",
+          "body": "[Specialized's top-tier aero road bike, the S-Works Venge, has been updated with Shimano's Dura-Ace Di2 electronic groupset for improved shifting performance and sleek aesthetics.]"
+        },
+        {
+          "tag": "Community",
+          "title": "Women's Tour of Scotland Announces 2021 Route",
+          "body": "[Organizers have revealed the route for this year's Women's Tour of Scotland, a five-day stage race scheduled to take place in September. The event will feature many of the world's top women riders and is part of the UCI Women's WorldTour.]"
         }
       ],
-      "id": "2026-03-17",
-      "date_full": "Tuesday, 17 March 2026",
-      "date_short": "17 Mar"
+      "stats": [
+        {
+          "label": "Stage Winner",
+          "value": "Sam Bennett (Deceuninck – Quick-Step)"
+        },
+        {
+          "label": "Race Leader",
+          "value": "Tadej Pogačar (UAE Team Emirates)"
+        },
+        {
+          "label": "Next Major Race",
+          "value": "Vuelta a España (August 14, 2021)"
+        },
+        {
+          "label": "Today's Date",
+          "value": "July 18, 2021"
+        }
+      ],
+      "quote": {
+        "text": "It feels like I've been chasing this for a long time. To finally get the win is amazing.",
+        "source": "Sam Bennett (Deceuninck – Quick-Step)"
+      }
     },
     {
       "id": "2026-03-16",
