@@ -1,6 +1,65 @@
 {
   "briefs": [
     {
+      "briefs": [
+        {
+          "id": "2026-03-16",
+          "date": "16 Mar",
+          "date_short": "16 Mar",
+          "date_full": "Monday, 16 March 2026",
+          "headline": "UAE Tour stage 4: Dutch rider Tiesj Benoot wins as Tadej Pogacar takes overall lead",
+          "lede": "Tiesj Benoot of Israel-Premier Tech stormed to victory on stage 4 of the UAE Tour, while Slovenian rider Tadej Pogacar took over the overall lead.",
+          "stories": [
+            {
+              "tag": "Race Results",
+              "title": "UAE Tour Stage 4: Benoot Claims Victory as Pogacar Takes Overall Lead",
+              "body": "The 207km stage from Al Ain to Jebel Hafeet was a grueling test for riders. Israel-Premier Tech's Tiesj Benoot attacked on the final climb to take his first win of the season. Pogacar's teammate Brandon McNulty placed second."
+            },
+            {
+              "tag": "Pro Peloton",
+              "title": "Wout van Aert to Skip Volta ao Algarve",
+              "body": "The Belgian rider will skip the Portuguese event due to fatigue after a busy start to the season, affecting his preparation for Milano-Sanremo."
+            },
+            {
+              "tag": "Tech & Gear",
+              "title": "Specialized Launches New S-Works Venge SBC",
+              "body": "The American manufacturer released its latest aero road bike featuring an advanced cockpit optimised for airflow, already used by Sagan and Evenepoel."
+            },
+            {
+              "tag": "Community",
+              "title": "Strava Launches Virtual Club Challenge Series",
+              "body": "Strava announced a new series of virtual club challenges including hill climbs, time trials and group rides with prizes for winning clubs."
+            }
+          ],
+          "stats": [
+            {
+              "label": "Stage Winner",
+              "value": "Tiesj Benoot (4h 52m 41s)"
+            },
+            {
+              "label": "Race Leader",
+              "value": "Tadej Pogacar"
+            },
+            {
+              "label": "Next Race",
+              "value": "UAE Tour Stage 5 — 17 Mar"
+            },
+            {
+              "label": "Today",
+              "value": "16 March 2026"
+            }
+          ],
+          "quote": {
+            "text": "The final climb was brutal, but I knew I had a chance to win.",
+            "source": "Tiesj Benoot, Israel-Premier Tech"
+          }
+        }
+      ],
+      "id": "2026-03-17",
+      "date_full": "Tuesday, 17 March 2026",
+      "date_short": "17 Mar"
+    },
+    {
       "id": "2026-03-16",
       "date": "16 Mar",
       "date_short": "16 Mar",
