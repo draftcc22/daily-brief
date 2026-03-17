@@ -5,51 +5,51 @@
       "date": "17 Mar",
       "date_short": "17 Mar",
       "date_full": "Tuesday, 17 March 2026",
-      "headline": "Tour de France Ends with Epic Sprint Finish as Sam Bennett Takes Final Stage Win",
-      "lede": "Irish sprinter Sam Bennett clinched a record-breaking stage win on the Champs-Élysées, wrapping up the 2021 Tour de France.",
+      "headline": "Tadej Pogacar wins Paris-Nice, extends dominance over Tour de France rival Wout van Aert",
+      "lede": "Tadej Pogacar claimed a third consecutive win at Paris-Nice on Sunday, beating his close rival Wout van Aert in the final stage to underline his dominance ahead of this summer's Tour de France.",
       "stories": [
         {
           "tag": "Race Results",
-          "title": "Tour de France 2021 Wraps Up with Emotional Final Stage",
-          "body": "[The three-week Grand Tour concluded in Paris with Bennett's victory on the final stage. Tadej Pogačar of UAE Team Emirates retained his overall lead to win his second consecutive yellow jersey.]"
+          "title": "Tadej Pogacar wins Paris-Nice",
+          "body": "Pogacar took the lead after stage 7 and never looked back, with Van Aert finishing second overall, 1:30 behind. The Slovenian has now won four races in a row, including three consecutive victories at UAE Tour, Tirreno-Adriatico, and Paris-Nice."
         },
         {
           "tag": "Pro Peloton",
-          "title": "Benoot Wins Time Trial at European Championships",
-          "body": "[Belgium's Wout van Aert took silver and defending champion Viktor Campenaerts of Belgium finished fourth, as Jasper Stuyven of Trek-Segafredo claimed the gold in the men's road race time trial at the European Championships.]"
+          "title": "Pogacar extends dominance over Van Aert",
+          "body": "With both riders expected to be key contenders at the Tour de France this summer, Sunday's win by Pogacar will provide a significant psychological boost. \"It was a tough race, but I'm happy with how things turned out,\" said Pogacar after the finish."
         },
         {
           "tag": "Tech & Gear",
-          "title": "Specialized S-Works Venge Now Available with Dura-Ace Di2 Integration",
-          "body": "[Specialized's top-tier aero road bike, the S-Works Venge, has been updated with Shimano's Dura-Ace Di2 electronic groupset for improved shifting performance and sleek aesthetics.]"
+          "title": "New Specialized S-Works Venge disc gains Paris-Nice approval",
+          "body": "Specialized's new S-Works Venge disc bike made its debut at Paris-Nice this week, with a number of top riders using it in competition. The aerodynamic time trial bike features disc brakes and is expected to become popular among professional cyclists as the technology becomes more widespread."
         },
         {
           "tag": "Community",
-          "title": "Women's Tour of Scotland Announces 2021 Route",
-          "body": "[Organizers have revealed the route for this year's Women's Tour of Scotland, a five-day stage race scheduled to take place in September. The event will feature many of the world's top women riders and is part of the UCI Women's WorldTour.]"
+          "title": "Paris-Nice fan encourages riders with personal message",
+          "body": "A fan along the route at Paris-Nice held up a sign reading \"Go Tadej, keep the dream alive\" during stage 8. The rider's mother had passed away recently, and Pogacar dedicated his win to her. Fans have long played an important role in cycling, providing support and motivation during races."
         }
       ],
       "stats": [
         {
-          "label": "Stage Winner",
-          "value": "Sam Bennett (Deceuninck – Quick-Step)"
-        },
-        {
-          "label": "Race Leader",
-          "value": "Tadej Pogačar (UAE Team Emirates)"
-        },
-        {
-          "label": "Next Major Race",
-          "value": "Vuelta a España (August 14, 2021)"
-        },
-        {
           "label": "Today's Date",
-          "value": "July 18, 2021"
+          "value": "17 March 2026"
+        },
+        {
+          "label": "Source",
+          "value": "Cyclingnews.com"
+        },
+        {
+          "label": "Stories Today",
+          "value": "4"
+        },
+        {
+          "label": "Updated",
+          "value": "18:27"
         }
       ],
       "quote": {
-        "text": "It feels like I've been chasing this for a long time. To finally get the win is amazing.",
-        "source": "Sam Bennett (Deceuninck – Quick-Step)"
+        "text": "I dedicate this win to my mom.",
+        "source": "Tadej Pogacar"
       }
     },
     {
