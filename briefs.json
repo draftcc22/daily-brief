@@ -1,6 +1,58 @@
 {
   "briefs": [
     {
+      "id": "2026-03-20",
+      "date": "20 Mar",
+      "date_short": "20 Mar",
+      "date_full": "Friday, 20 March 2026",
+      "headline": "All signs are positive for Arnaud De Lie — but where are the results?",
+      "lede": "Lotto-Intermarché's young star Arnaud De Lie has shown promise, but is yet to deliver a win in his second spring campaign.",
+      "stories": [
+        {
+          "tag": "Race Results",
+          "title": "No race results mentioned in this headline",
+          "body": ""
+        },
+        {
+          "tag": "Pro Peloton",
+          "title": "All signs are positive for Arnaud De Lie — but where are the results?",
+          "body": "[Arnaud De Lie has shown promise, but is yet to deliver a win in his second spring campaign]"
+        },
+        {
+          "tag": "Tech & Gear",
+          "title": "No tech or gear news mentioned in this headline",
+          "body": ""
+        },
+        {
+          "tag": "Community",
+          "title": "No community news mentioned in this headline",
+          "body": ""
+        }
+      ],
+      "stats": [
+        {
+          "label": "Today's Date",
+          "value": "20 March 2026"
+        },
+        {
+          "label": "Source",
+          "value": "Brave Search"
+        },
+        {
+          "label": "Stories Today",
+          "value": "4"
+        },
+        {
+          "label": "Updated",
+          "value": "10:47"
+        }
+      ],
+      "quote": {
+        "text": "I have the legs, I look mentally sharp",
+        "source": "Arnaud De Lie"
+      }
+    },
+    {
       "id": "2026-03-17",
       "date": "17 Mar",
       "date_short": "17 Mar",
